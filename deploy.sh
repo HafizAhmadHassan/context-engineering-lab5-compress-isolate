@@ -28,5 +28,7 @@ git add -A
 git commit -q -m "Deploy ${COMMIT_SHA}: ${COMMIT_MSG}" || echo "no changes to deploy"
 git push -f origin gh-pages
 
+USER=$(echo "$REPO_URL" | cut -d/ -f1)
+REPO_NAME=$(echo "$REPO_URL" | cut -d/ -f2)
 echo ""
-echo "Deployed to https://$REPO_URL/"
+echo "Deployed to https://$USER.github.io/$REPO_NAME/"

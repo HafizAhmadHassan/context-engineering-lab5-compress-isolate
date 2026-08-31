@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from "react";
 
 const variants = {
@@ -46,9 +47,9 @@ export default function Button({
       href: string;
     };
     return (
-      <a href={href} className={cls} {...rest}>
+      <Link href={href} className={cls} {...rest}>
         {children}
-      </a>
+      </Link>
     );
   }
 

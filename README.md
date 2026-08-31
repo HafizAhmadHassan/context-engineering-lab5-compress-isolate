@@ -1,4 +1,5 @@
 # Day 5: COMPRESS & ISOLATE — Context Engineering
+*Created: 2026-08-31*
 
 A workspace-style (non-LLM) interactive walkthrough of the day-5 workshop: how to
 **compress** context that accumulates inside a window and **isolate** work across
